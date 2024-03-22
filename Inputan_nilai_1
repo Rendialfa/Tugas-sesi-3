@@ -1,0 +1,13 @@
+nilai = float(input("Masukkan nilai Anda: "))
+
+if nilai > 75:
+    print("Anda lulus.")
+else:
+    print("Anda tidak lulus.")
+
+tahun_lahir = int(input("Masukkan tahun lahir Anda: "))
+
+if tahun_lahir <= 2000:
+    print("Anda merupakan bagian dari generasi Gen-Z.")
+else:
+    print("Anda bukan bagian dari generasi Gen-Z.")
