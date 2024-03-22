@@ -1,0 +1,23 @@
+print("Program Perhitungan IPK Semester Ini")
+
+mata_kuliah = ["Algoritma", "Perancangan Objek", "Kalkulus", "Etika Profesi", "Databases", "English 1"]
+
+jumlah_matkul = len(mata_kuliah)
+
+total_skor = 0
+total_sks = 0
+
+for i in range(jumlah_matkul):
+    nilai = float(input(f"Masukkan nilai mata kuliah {mata_kuliah[i]}: "))
+    sks = int(input(f"Masukkan jumlah SKS mata kuliah {mata_kuliah[i]}: "))
+    
+    skor_matkul = nilai * sks
+    
+    total_skor += skor_matkul
+    total_sks += sks
+
+if total_sks != 0:
+    ipk = total_skor / total_sks
+    print(f"IPK Anda untuk semester ini adalah: {ipk:.2f}")
+else:
+    print("Tidak ada SKS yang diambil, IPK tidak dapat dihitung.")
